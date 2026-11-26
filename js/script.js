@@ -15,7 +15,6 @@ function getBooksByCategory(category) {
     return booksFiltred;
 }
 
-console.log(getAvailableBooks());
 
 
 function displayBooks(books) {
@@ -33,3 +32,9 @@ function getAvailableBooks() {
     const availableBooks = books.filter(book =>{ return book.status == 'Disponible'})
     return availableBooks
 }
+function countBooksByStatus(status) {
+    let booksFiltredByStatus = books.filter(book => {return book.status == status})
+    let count = booksFiltredByStatus.length
+    return count
+}
+console.log(countBooksByStatus('Emprunté'));

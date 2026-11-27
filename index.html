@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="js/data.js"></script>
     <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/main.js"></script>
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 
     <title>Library Management</title>
@@ -38,8 +39,8 @@
             </div>
         </section>
         <section class="bg-white p-4 flex items-center justify-between gap-6  rounded-2xl">
-            <table id="data-table" class="w-full border border-[#EA580C] p-4 ">
-                <thead class="culomns-names">
+            <table id="books-table" border="1px solid black" class="w-full  p-4">
+                <thead class="culomns-names items-start ">
                     <tr>
                         <th>Id</th>
                         <th>Title</th>
@@ -47,7 +48,7 @@
                         <th>Statu</th>
                     </tr>
                 </thead>
-                <tbody id="main-data">
+                <tbody id="main-data" class="items-center">
                     
                 </tbody>
 

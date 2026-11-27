@@ -25,3 +25,10 @@ const tableBody = document.getElementById('main-data')
     }
 
     creatCulomns(books)
+
+    function name(params) {
+        params*3
+    }
+    let x = name(3)
+    console.log(x);
+    
